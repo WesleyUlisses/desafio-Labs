@@ -1,0 +1,21 @@
+.painel-container {
+    background-color: #D9D9D9;
+    width: 55vw;
+    
+}
+
+.mulher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20% 0 0 0;
+    background-color: #D9D9D9;
+    height: 100vh;
+    
+    
+}
+
+.logo {
+    padding: 2rem 0 0 2rem;
+    background-color: #D9D9D9
+}

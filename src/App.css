@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-de-letraPrincipal: #404857;
+  --cor-de-letraAzul: #5CCCDE;
+  --cor-de-letraMenor: #2C3549;
+
+  --fonte-principal: "Inter";
+}
+
+.bodyContainer {
+  display: flex;
+  
+  width: 100%;
+}
+
+
