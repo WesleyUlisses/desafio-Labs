@@ -30,24 +30,22 @@ const Cadastrar = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+    
         try {
             const response = await axios.post('https://labs-talent-desafio.onrender.com/usuarios', {
                 name: nome,
                 email: email,
                 password: senha,
-            }).then(
-                (response) => {
-                    alert("Usuário cadastrado com sucesso!")
-                    setMessage("Usuário cadastrado com sucesso!");
-                    console.log(response.data);
-                }
-            ).catch ((error) => {
-                alert(error)
-                console.log(error)
-            })  
-
+            });
+    
+            // Se chegar aqui, a requisição foi bem-sucedida
+            alert("Usuário cadastrado com sucesso!");
+            setMessage("Usuário cadastrado com sucesso!");
+            console.log(response.data);
+    
         } catch (error) {
+            // Se ocorrer qualquer erro, ele será tratado aqui
+            alert("Erro ao cadastrar o usuário");
             setMessage("Erro ao cadastrar.");
             console.log(error);
         }
