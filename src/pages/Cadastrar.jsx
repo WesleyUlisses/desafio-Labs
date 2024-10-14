@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Menu from '../components/menuLateral/Menu'
 import '../styles/cadastrar.css'
-import { api } from '../service/api'
 import { validEmail, validPassword } from '../service/regex'
 import axios from 'axios'
 
